@@ -158,8 +158,11 @@ a:focus {
 }
 
 .navbar-brand {
-  margin: 15px 0;
+  margin: 10px 0;
   padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
   span {
     font-size: 28px;

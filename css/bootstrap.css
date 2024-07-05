@@ -4247,6 +4247,12 @@ input[type="button"].btn-block {
     padding-right: 0;
     padding-left: 0;
   }
+  .navbar-brand {
+    display: flex;
+    align-items: flex-start !important;
+    justify-content: left !important;
+    width: 70% !important;
+  }
 }
 
 @media (min-width: 576px) {
