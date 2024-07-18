@@ -66,6 +66,9 @@
 
 @media (max-width: 768px) {
     .hero_area {
+        padding: 0;
+    }
+    .navbar {
         padding: 0 25px;
     }
 
