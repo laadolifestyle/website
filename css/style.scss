@@ -547,19 +547,28 @@ a:focus {
 // contact section
 .contact_section {
   position: relative;
+  padding-left: 45px;
+  padding-right: 45px;
 
+  .box {
+    border-radius: 15px;
+    color: #ffffff;
+  }
 
   .container-bg {
     box-shadow: 0 0 25px 0 rgba($color: #000000, $alpha: .1);
 
   }
 
-  .heading_container {
-    margin-bottom: 30px;
-  }
+  // .heading_container {
+  //   margin-bottom: 30px;
+  // }
 
   .row {
     align-items: stretch;
+    .card {
+      background-color: #eeeeee;
+    }
   }
 
   form {
@@ -616,7 +625,7 @@ a:focus {
   .box {
     margin: 15px 45px;
     box-shadow: 0 0 5px 0 rgba($color: #000000, $alpha: .25);
-    padding: 25px;
+    // padding: 25px;
 
     .client_info {
       display: flex;
