@@ -1,11 +1,12 @@
 document.addEventListener('DOMContentLoaded', () => {
-    const params = new URLSearchParams(window.location.search);
-    const productId = params.get('id');
+    const pathArray = window.location.pathname.split('/');
+    const productSlug = pathArray[pathArray.length - 1];
 
-    if (productId && products[productId]) {
-        const product = products[productId];
-        const productDetailsContainer = document.getElementById('product-details');
+    // Find the product with the matching slug
+    const product = Object.values(products).find(product => product.productSlug === productSlug);
+    const productDetailsContainer = document.getElementById('product-details');
 
+    if (product) {
         productDetailsContainer.innerHTML = `
             <h1>${product.productName}</h1>
             <div class="img-box">
