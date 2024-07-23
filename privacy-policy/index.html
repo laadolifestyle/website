@@ -110,7 +110,7 @@
             <h4>1. Information We Collect</h4>
 
             <b>Personal Information:</b>
-            - When you place an order, create an account, or subscribe to our newsletter, we collect personal
+            - When you place an order, create an account, or Drop a message to our Support, we collect personal
             information such as your name, email address, shipping address, phone number, and payment details.
 
             <b>Non-Personal Information:</b>
@@ -130,7 +130,7 @@
             <b>Marketing Communications:</b>
             - With your consent, we may use your email address to send you promotional materials, special offers,
             and updates about our products. You can opt-out of these communications at any time by following the
-            unsubscribe link in the email.
+            unDrop a message link in the email.
 
             <h4>3. How We Share Your Information</h4>
 
@@ -222,28 +222,36 @@
                         </h6>
                         <ul>
                             <li>
-                                <a href="/">Home</a>
+                                <a href="/" class="text-white">Home</a>
                             </li>
                             <li>
-                                <a href="/shop">Shop</a>
+                                <a href="/shop" class="text-white">Shop</a>
                             </li>
                             <li>
-                                <a href="/why-us">Why Us</a>
+                                <a href="/why-us" class="text-white">Why Us</a>
                             </li>
                             <li>
-                                <a href="/contact">Contact</a>
+                                <a href="/contact" class="text-white">Contact</a>
                             </li>
                         </ul>
                     </div>
                     <div class="col-md-6 col-lg-3">
                         <div class="info_form ">
                             <h5>
-                                Newsletter
+                                Support
                             </h5>
-                            <form action="#">
-                                <input type="email" placeholder="Enter your email">
+                            <form action="https://api.staticforms.xyz/submit" method="post">
+            <!-- Replace with accesKey sent to your email -->
+            <input type="hidden" name="accessKey" value="f63d6e6a-29e2-40ab-b4b2-8459e208e165"> <!-- Required -->
+            <input type="text" name="honeypot" style="display: none;"> <!-- Optional -->
+            <!-- If you want replyTo to be set to specific email -->
+            <input type="hidden" name="replyTo" value="support@laadolfestyle.com"> <!-- Optional -->
+            <!-- Specify @ as reply to value if you want it to be customers email -->
+            <input type="hidden" name="replyTo" value="@"> <!-- Optional -->
+            <input type="hidden" name="redirectTo" value="https://laadolifestyle.com/#contact-us">
+                                <input type="text" placeholder="Enter your query" name="query" required>
                                 <button>
-                                    Subscribe
+                                    Drop a message
                                 </button>
                             </form>
                         </div>
@@ -254,13 +262,13 @@
                         </h6>
                         <ul>
                             <li>
-                                <a href="/privacy-policy">Privacy Policy</a>
+                                <a href="/privacy-policy" class="text-white">Privacy Policy</a>
                             </li>
                             <li>
-                                <a href="/disclaimer">Disclaimer</a>
+                                <a href="/disclaimer" class="text-white">Disclaimer</a>
                             </li>
                             <li>
-                                <a href="/sitemap">Site Map</a>
+                                <a href="/sitemap" class="text-white">Site Map</a>
                             </li>
                         </ul>
                     </div>

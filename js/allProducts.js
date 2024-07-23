@@ -7,7 +7,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
         productBox.innerHTML = `
             <div class="box">
-                <a href="product/${product.productSlug}">
+                <a href="/product/${product.productSlug}">
                     <div class="img-box">
                         <img src="${product.productImages[0].src}" alt="${product.productImages[0].alt}">
                     </div>
